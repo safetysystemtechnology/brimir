@@ -78,6 +78,22 @@ Incoming emails can be posted to the tickets url by using the script found in sc
 
 Now sending an email to brimir@yoururl.com should start curl and post the email to your brimir installation.
 
+Development
+-----------
+To use in development you must follow these simple steps:
+- Run the bundle command:
+        
+        bundle install --without mysql postgresql --with sqlite
+        
+- Run the rails db commands as any other rails application:
+        
+        rails db:create
+        rails db:migrate
+        
+- (Optional) Seeding application:
+        
+        rails db:seed
+        
 Contributing
 ------------
 We appreciate all contributions! If you would like to contribute, please follow these steps:
